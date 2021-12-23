@@ -1,15 +1,31 @@
-import React from 'react'
-import Student from './student'
+  
+import React from "react";
+import Student from "./student";
 
 function HomeTable() {
-    return (
-        <div className="homeTableStyle">
-        <Student name="Pragya" enroll_no="20" email ="pragya@gmail.com" marks="91" mobile="+91 123452340"mobile2="+91 123452340" />
-        <Student name="Komal"  enroll_no="20"email ="komal@gmail.com" marks="92" mobile="+91 1234567890" mobile2="+91 123452340"/>
-        <Student name="mini " enroll_no="30"email ="minil@gmail.com" marks="92" mobile="+91 1234567890" mobile2="+91 123452340"/>
-        <Student name="Sandhya"  enroll_no="40" email ="sandhya@gmail.com" marks="92" mobile="+91 654789123"mobile2="+91 123452340" />
-      </div>
-    )
+  var students = [
+    { name: "Pragya", marks: "91", mobile: "+91 123452340" },
+    { name: "Sandhya", marks: "92", mobile: "+91 123452340" },
+    { name: "Ruhi", marks: "93", mobile: "+91 123452340" },
+    { name: "Mini", marks: "94", mobile: "+91 234567740" },
+  ];
+
+  const studentList = students.map((student) =>  
+   <Student name={students[0].name} marks={students[0].marks} mobile={students[0].mobile}  />
+  ); 
+
+  return (
+    // <div className="homeTableStyle">      
+    //   <Student name={students[0].name} marks={students[0].marks} mobile={students[0].mobile} />
+    //   <Student name={students[1].name} marks={students[1].marks} mobile={students[1].mobile} />
+    //   <Student name={students[2].name} marks={students[2].marks} mobile={students[2].mobile} />
+    //   <Student name={students[3].name} marks={students[3].marks} mobile={students[3].mobile} />
+    // </div>
+<div className="homeTableStyle">
+  {studentList}
+</div>
+
+  );
 }
 
-export default HomeTable
+export default HomeTable;
