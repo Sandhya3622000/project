@@ -1,15 +1,21 @@
 import React from "react";
-import HomeForm from "./homeForm";
-import HomeTable from "./homeTable";
 import Student from "./student";
 
 function Home() {
   return (
     <div className="homeStyle">
-     <HomeTable/>
-      <HomeForm/>
+      <div className="homeTableStyle">
+        <Student name="Pragya" marks="91" mobile="+91 123452340" />
+        <Student name="Shivji" marks="92" mobile="+91 1234567890" />
+        <Student name="Radhe" marks="92" mobile="+91 654789123" />
+      </div>
+      <div className="homeFormStyle">
+        <Student name="Pragya" marks="91" mobile="+91 123452340" />
+        <Student name="Shivji" marks="92" mobile="+91 1234567890" />
+        <Student name="Radhe" marks="92" mobile="+91 654789123" />
+      </div>
     </div>
   );
 }
 
-export default Home
+export default Home;
