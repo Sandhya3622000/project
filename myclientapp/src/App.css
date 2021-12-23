@@ -1,20 +1,25 @@
-/* *{
+/* 
+*{
   box-sizing:border-box;
   height: 0px;
-  width: 0px; */
+  width: 0px;
+} */
 
 .App {
   text-align: center;
-  width: 90%;
-  height: 95%;
+  width: 98%;
+  height:98%;
   margin: 1%;
 }
+
+
+
 .navbar {
   border-bottom: 1px solid #a5a1a2;
   max-width: 90%;
   display: flex;
   /* margin: 0 auto; */
-  margin-top : 2%;
+  margin-top: 2%;
   margin-bottom: 2%;
 }
 

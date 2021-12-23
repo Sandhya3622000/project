@@ -1,12 +1,11 @@
-import React from 'react';
+import React from 'react'
 
 function Footer() {
     return (
-        <div style={{border:'1px solid pink'}}>
-            <h6>This is footer section</h6>
-            
+        <div className="footerStyle">
+            <h6>Copyright @ 2021 Yukti Software </h6>
         </div>
-    );
-};
+    )
+}
 
 export default Footer;

@@ -1,18 +1,16 @@
-import React from 'react';
+import React from 'react'
 
 function Navbar() {
     return (
         <div className="navbar">
-            <div class="links">
-                 <a className="link" href="/home">Home</a>
-                 <a className="link" href="/application">Application</a>
-                 <a className="link" href="/contact">Contact</a>
-                 <a className="link" href="/profile">Profile</a>
+            <div className="links">
+                <a className="link" href="/home">Home</a>
+                <a className="link" href="/application">Application</a>
+                <a className="link" href="/contact">Contact</a>
+                <a className="link" href="/profile">Profile</a>
             </div>
-
-            
-        </div>
-    );
-};
+            </div>
+    )
+}
 
 export default Navbar;
