@@ -58,6 +58,10 @@ const empty_Student = {
     // const resetHandler = ()=>{     
     //  setStudent(empty_Student);
     // }
+
+
+
+
     return (
         <div className="homeFormStyle">
           <div style={{minHeight:'700px'}}>
